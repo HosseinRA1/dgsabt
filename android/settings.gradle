@@ -1,0 +1,3 @@
+rootProject.name = 'dgsabt'
+
+include ':app'

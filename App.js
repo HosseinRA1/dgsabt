@@ -15,8 +15,8 @@ export default class App extends Component {
         return (
             <Router>
                 <Scene key="root" hideNavBar>
-                    <Scene key = "splash" component = {Splash} initial/>
-                    <Scene key = 'intro' component = {Intro}/>
+                    <Scene key = "splash" component = {Splash} />
+                    <Scene key = 'intro' component = {Intro} initial/>
                 </Scene>
             </Router>
         );

@@ -91,7 +91,7 @@ export default class Intro extends Component {
         );
     };
     _onDone = () => {
-        Actions.replace('auth');
+        Actions.replace('login');
     };
 
     render() {

@@ -3,6 +3,7 @@ import {View} from 'native-base'
 import {Image} from 'react-native'
 import splash from '../assets/styles/splash'
 import Text from "../components/common/Text";
+import {Actions} from 'react-native-router-flux'
 
 export default class Splash extends Component {
     componentWillMount() {

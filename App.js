@@ -5,6 +5,9 @@ import {backgroundColor} from "./src/helper/colors";
 import {Router, Scene} from "react-native-router-flux";
 import Intro from './src/screen/Intro'
 import Login from "./src/screen/auth/Login";
+import Verify from "./src/screen/auth/Verify";
+import Home from "./src/screen/home/Home";
+import Main from "./src/screen/home/Main";
 
 EStyleSheet.build({
     $backgroundColor: backgroundColor,
@@ -19,8 +22,14 @@ export default class App extends Component {
                     <Scene key = "splash" component = {Splash} />
                     <Scene key = 'intro' component = {Intro} />
 
-                    <Scene key = "auth" hideNavBar initial>
-                        <Scene key = "login" component = {Login} initial/>
+                    <Scene key = "auth" hideNavBar >
+                        <Scene key = "login" component = {Login} />
+                        <Scene key = "verify" component = {Verify} />
+                    </Scene>
+
+                    <Scene key = "home" initial hideNavBar>
+                        <Scene key = "home_page" component = {Home}/>
+                        <Scene key = "main_page" component = {Main } initial/>
                     </Scene>
                 </Scene>
             </Router>

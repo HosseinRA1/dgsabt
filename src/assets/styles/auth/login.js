@@ -12,7 +12,7 @@ const login = EStyleSheet.create({
         backgroundColor : 'rgba(41,128,185,0.86)'
     },
     container : {
-        flex : 1,
+        flex : .9,
         justifyContent : 'space-evenly',
         alignItems : 'center',
         marginTop : -20

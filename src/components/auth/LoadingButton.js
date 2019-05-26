@@ -38,7 +38,7 @@ const styles = EStyleSheet.create({
     },
     buttonStyle: {
         width: 200,
-        height: 30,
+        height: 40,
         borderRadius: 20,
         alignItems: 'center',
         justifyContent: 'center',

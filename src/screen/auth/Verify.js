@@ -1,10 +1,12 @@
 import React, {Component} from 'react'
-import {ImageBackground, Image} from 'react-native'
+import {ImageBackground, Image, TouchableOpacity} from 'react-native'
 import { View} from 'native-base'
 import login from "../../assets/styles/auth/login";
 import Text from "../../components/common/Text";
 import LoadingButton from "../../components/auth/LoadingButton";
 import DashInput from "../../components/auth/DashInput";
+import {Actions} from "react-native-router-flux";
+import {primaryColor} from "../../helper/colors";
 
 export default class Verify extends Component {
     render() {
@@ -23,6 +25,15 @@ export default class Verify extends Component {
                     </View>
                     <View>
                         <LoadingButton title='تایید'/>
+                        <TouchableOpacity onPress = {() => Actions.replace('main_page')} style = {{  width: 200,
+                            height: 30,
+                            borderRadius: 20,
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                            backgroundColor: 'white',
+                            marginTop : 20}}>
+                            <Text color = {primaryColor}>مرحله بعد</Text>
+                        </TouchableOpacity>
                     </View>
                 </View>
             </ImageBackground>

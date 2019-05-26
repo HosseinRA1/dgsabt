@@ -8,8 +8,8 @@ const intro = EStyleSheet.create({
     },
     image: {
         resizeMode: 'contain',
-        width: 170,
-        height: 110,
+        width: 200,
+        height: 130,
         marginTop: 60,
         alignSelf: 'center',
 
@@ -40,22 +40,24 @@ const intro = EStyleSheet.create({
     buttonCircle: {
         width: 40,
         height: 40,
-        paddingTop: 2,
+
         backgroundColor: 'white',
         borderRadius: 20,
         justifyContent: 'center',
         alignItems: 'center',
     },
     nextIcon: {
-        color: '#383838',
+        color: '#296fa7',
         backgroundColor: 'transparent',
+        alignSelf:'center'
 
     },
     btn: {
         zIndex: 1,
+        alignItems : 'center'
     },
     footer: {
-        resizeMode: 'contain',
+
         width: screenWidth(),
         height: 105,
         position: 'absolute',
@@ -71,12 +73,11 @@ const intro = EStyleSheet.create({
         marginTop : -20
     },
     writeVector: {
-        resizeMode: 'contain',
-        width: 300,
-        height: 300,
+        width: screenWidth() *.6,
+        height: screenHeight() *.57,
         position: 'absolute',
-        left: -15,
-        marginTop: 150,
+        alignSelf : 'center',
+        marginTop: 170,
         tintColor: '#2980b999'
     },
 

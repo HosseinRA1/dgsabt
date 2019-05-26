@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import Splash from "./src/screen/Splash";
 import EStyleSheet from 'react-native-extended-stylesheet'
-import {backgroundColor} from "./src/helper/colors";
+import {primaryColor} from "./src/helper/colors";
 import {Router, Scene} from "react-native-router-flux";
 import Intro from './src/screen/Intro'
 import Login from "./src/screen/auth/Login";
@@ -10,7 +10,7 @@ import Home from "./src/screen/home/Home";
 import Main from "./src/screen/home/Main";
 
 EStyleSheet.build({
-    $backgroundColor: backgroundColor,
+    $primaryColor: primaryColor,
     $fontFamily: "IRANSansMobile(FaNum)"
 });
 
@@ -27,7 +27,7 @@ export default class App extends Component {
                         <Scene key = "verify" component = {Verify} />
                     </Scene>
 
-                    <Scene key = "home" initial hideNavBar>
+                    <Scene key = "home"  hideNavBar initial>
                         <Scene key = "home_page" component = {Home}/>
                         <Scene key = "main_page" component = {Main } initial/>
                     </Scene>

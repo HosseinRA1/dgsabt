@@ -6,6 +6,7 @@ import intro from "../assets/styles/intro";
 import Text from "../components/common/Text";
 import {Actions} from 'react-native-router-flux';
 import LinearGradient from "react-native-linear-gradient";
+import StatusBarColor from "../components/common/statusBar/StatusBarColor";
 
 const slides = [
     {
@@ -18,13 +19,25 @@ const slides = [
     {
         key: 'somethun-dos',
         image1: require('../assets/images/intro-head1.png'),
-        text: 'با ثبت نام در سامانه دیجی ثبت ، می توانید فقط با چند کلیک امور ثبتی خود را شروع کنید',
+        text :
+            'با ثبت نام در سامانه دیجی ثبت ، می توانید فقط با چند کلیک امور ثبتی خود را شروع کنید \n' +
+            '\n'+
+            '\n'+
+            '- ثبت انواع شرکت ها\n' +
+            '-ثبت موسسات\n' +
+            '-ثبت برند و علائم تجاری \n' +
+            '-ثبت نشان تجاری (لوگو )\n' +
+            '-ثبت طرح صنعتی \n' +
+            '-اخذ جواز تاسیس\n' +
+            '-اخذ کارت بازرگانی\n' +
+            '-امور حقوقی و جلوگیری از کپی برداری \n' +
+            'و ...',
         backgroundColor: '#febe29',
     },
     {
         key: 'somethun1',
         image1: require('../assets/images/intro-head2.png'),
-        text: 'با عقد قرارداد، در باشگاه مشتریان دیجی ثبت صاحب امتیاز شده و می توانید از خدمات و محصولات متنوعی بصورت رایگان بهره مند شوید',
+        text: 'با عقد قرارداد، در باشگاه دیجی ثبت صاحب امتیاز شده و می توانید از خدمات و محصولات متنوعی بصورت رایگان بهره مند شوید',
         backgroundColor: '#22bcb5',
     },
     {
@@ -37,7 +50,7 @@ const slides = [
         key: 'somethun3',
         image1: require('../assets/images/intro-head4.png'),
         title: 'و در پایان :',
-        text: 'کاربران عزیزی که در مایل به همکاری در دیجی ثبت می باشند،در بخش همکاری با ما،اطلاعات خود را ثبت کرده تا در صورت صلاحیت به ناوگان هوشمند دیجی ثبت بپیوندید',
+        text: 'ما را به دوستان خود معرفی کرده و از ما خدمات رایگان دریافت نمایید . همچنین دیجی ثبت از همکاری با کسانی که مایل به اخذ نمایندگی در شهرستان های مختلف را دارند ، استقبال می کند . منتظرتان هستیم ...',
         backgroundColor: '#22bcb5',
     },
 ];
@@ -70,7 +83,6 @@ export default class Intro extends Component {
             <View style={intro.buttonCircle}>
                 <Icon
                     name="md-arrow-round-back"
-                    size={24}
                     style={intro.nextIcon}
                 />
             </View>
@@ -97,6 +109,7 @@ export default class Intro extends Component {
     render() {
         return (
             <LinearGradient colors={['#2980b9', '#3498db', '#2980b9']} style={intro.renderView}>
+                <StatusBarColor/>
                 <View>
                     <Image source={require('../assets/images/intro-back.png')} style={intro.writeVector}/>
                 </View>

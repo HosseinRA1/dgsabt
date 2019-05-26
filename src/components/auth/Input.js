@@ -5,9 +5,7 @@ import Text from "../common/Text";
 import EStyleSheet from "react-native-extended-stylesheet";
 
 export default class Input extends Component {
-    state = {
-        text :''
-    };
+
     render() {
         const {title} =this.props;
         return (
@@ -17,7 +15,6 @@ export default class Input extends Component {
                     {...this.props}
                     placeholderTextColor = '#ffffff99'
                     style = {styles.input}
-                    onChangeText = {(text) => this.props.onChangeText(text)}
                     value = {this.props.value}
                 />
             </View>
@@ -29,12 +26,13 @@ export default class Input extends Component {
 const styles = EStyleSheet.create({
     input: {
         fontFamily: '$fontFamily',
-        fontSize: 14,
+        fontSize: 18,
+        color : 'white',
         borderBottomWidth: .9,
         borderColor: 'white',
         width : 250,
-        height : 40,
-        textAlign : 'right',
+        height : 60,
+        textAlign : 'center',
         marginBottom : 15
     },
     title : {

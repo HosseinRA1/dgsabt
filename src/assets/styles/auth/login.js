@@ -13,9 +13,11 @@ const login = EStyleSheet.create({
     },
     container : {
         flex : .9,
-        justifyContent : 'space-evenly',
         alignItems : 'center',
-        marginTop : -20
+        marginTop : 40
+    },
+    loginView:{
+      marginTop : 20
     },
     logo : {
         width : 120 ,
@@ -28,6 +30,9 @@ const login = EStyleSheet.create({
     },
     logoView : {
         alignItems : 'center'
+    },
+    buttonView : {
+        marginTop : 15
     }
 });
 export default login;

@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import {ImageBackground, Image ,TouchableOpacity} from 'react-native'
-import {View} from 'native-base'
+import {View , Content} from 'native-base'
 import login from "../../assets/styles/auth/login";
 import Text from "../../components/common/Text";
 import Input from "../../components/auth/Input";
@@ -15,14 +15,15 @@ export default class Login extends Component {
             <ImageBackground source={require('../../assets/images/login-background.png')} style={login.imageBackground}>
                 <View style={login.overlay}/>
 
-                <View style={login.container}>
+                <Content>
+                    <View style = {login.container}>
                     <View style={login.logoView}>
                         <Image style={login.logo} source={require('../../assets/images/logo.png')}/>
                         <Text h6 style={login.logoText}>DIGISABT</Text>
                     </View>
-                    <View>
+                    <View style ={login.loginView}>
                         <Input
-                            placeholder='برای مثال : محسن شهبازی'
+                            autoFocus = {true}
                             title='نام و نام خانوادگی'
                         />
                         <Input
@@ -31,7 +32,7 @@ export default class Login extends Component {
                             title='شماره موبایل'
                         />
                     </View>
-                    <View>
+                    <View style = {login.buttonView}>
                         <LoadingButton title='ورود'/>
                         <TouchableOpacity  onPress = {() => Actions.push('verify')} style = {{  width: 200,
                             height: 30,
@@ -43,7 +44,8 @@ export default class Login extends Component {
                             <Text color = {primaryColor}>مرحله بعد</Text>
                         </TouchableOpacity>
                     </View>
-                </View>
+                    </View>
+                </Content>
             </ImageBackground>
         )
     }

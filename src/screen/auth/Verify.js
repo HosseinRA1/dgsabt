@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import {ImageBackground, Image, TouchableOpacity} from 'react-native'
-import { View} from 'native-base'
+import { View , Content} from 'native-base'
 import login from "../../assets/styles/auth/login";
 import Text from "../../components/common/Text";
 import LoadingButton from "../../components/auth/LoadingButton";
@@ -13,17 +13,18 @@ export default class Verify extends Component {
         return (
             <ImageBackground source={require('../../assets/images/login-background.png')} style={login.imageBackground}>
                 <View style={login.overlay}/>
+                <Content>
                 <View style={login.container}>
                     <View style={login.logoView}>
                         <Image style={login.logo} source={require('../../assets/images/logo.png')}/>
                         <Text h6 style={login.logoText}>DIGISABT</Text>
                     </View>
 
-                    <View>
+                    <View style = {{marginTop : 30}}>
                         <Text h5 >لطفا کد چهار رقمی ارسال شده را وارد نمایید</Text>
                         <DashInput/>
                     </View>
-                    <View>
+                    <View style = {{marginTop:30}}>
                         <LoadingButton title='تایید'/>
                         <TouchableOpacity onPress = {() => Actions.replace('main_page')} style = {{  width: 200,
                             height: 30,
@@ -36,6 +37,7 @@ export default class Verify extends Component {
                         </TouchableOpacity>
                     </View>
                 </View>
+                </Content>
             </ImageBackground>
         )
     }

@@ -2,56 +2,28 @@ import EStyleSheet from 'react-native-extended-stylesheet'
 
 const home = EStyleSheet.create({
     container: {
-        flex: 1
-    },
-    sliderImageView: {
-        flex: .5, paddingHorizontal: 5
-    },
-    slider: {
-        height: 200,
-        width: '100%',
-        marginTop: 5,
-        paddingTop: 30,
-        flexDirection: 'row',
+        flex: 1,
+        backgroundColor: '#f1f1f3',
 
-        justifyContent: 'space-between'
     },
-    sliderImage: {
-        width: 160,
-        height: 140
+    headerImage : {
+        resizeMode: 'contain',
+        width: 110,
+        height: 60,
+        alignSelf : 'center'
     },
-    sliderButtonView: {
-        position: 'absolute',
-        flexDirection: 'row',
-        bottom: 0,
-        width: '100%',
-        height: 30,
-        justifyContent: 'space-between',
-        backgroundColor: '#00000099',
-        paddingHorizontal: 10
+    slideshow: {
+        width :'100%',
+        justifyContent : 'center'
     },
-    sliderButton: {
-        width: 30,
-        height: 30,
-        alignItems: 'center'
-    },
-    sliderButtonIcon: {
-        color: 'white'
-    },
-    sliderTextView: {
-        flex: .5,
+    customSlide: {
+        height : 160,
         alignItems: 'center',
-        paddingHorizontal: 5
-    },
-    sliderIcon: {
-        color: 'white',
-        fontSize: 36
-    },
-    sliderDescription: {
-        textAlign: 'center'
+        borderRadius : 15,
     },
     body: {
-        marginTop: 10
+        marginTop: 10,
+
     },
     bodyRow1: {
         flexDirection: 'row',
@@ -60,22 +32,31 @@ const home = EStyleSheet.create({
     startCardView: {
         flex: .48,
         height: 90,
-        borderRadius: 15,
-        //backgroundColor : 'black',
+        backgroundColor: 'transparent'
     },
     startCardGradient: {
         width: '100%',
         height: '100%',
         borderRadius: 15,
-        justifyContent: 'space-around',
+        justifyContent: 'space-between',
+        flexDirection: 'row',
+        backgroundColor: 'transparent'
     },
     startCardIconView: {
         flexDirection: 'row',
         paddingHorizontal: 10,
-        justifyContent: 'space-around'
+        justifyContent: 'center',
+        flex: .2,
+        backgroundColor: 'white',
+        alignItems: 'center',
+        borderTopRightRadius: 15,
+        borderBottomRightRadius: 15
+
     },
     startCardIcon: {
-        color: 'white'
+        resizeMode : 'contain',
+        width : 40,
+        height : 60,
     },
     centerText: {
         textAlign: 'center'
@@ -103,51 +84,67 @@ const home = EStyleSheet.create({
     },
     clubCardTextView: {
         paddingLeft: 15,
-        justifyContent : 'center'
+        justifyContent: 'center'
     },
     clubCardIconView: {
         paddingRight: 15
     },
     clubCardIcon: {
         fontSize: 48,
-        color: 'white'
+        color: 'white',
+
     },
     bodyRow2: {
         flexDirection: 'row',
         justifyContent: 'space-between',
         marginTop: 10
     },
-    commerceCardView: {
-        height: 250,
-        backgroundColor: '#f0f0f0',
+    commerceView: {
+height : 250,
         borderRadius: 15,
+        justifyContent: 'space-between',
+        backgroundColor: 'white'
+    },
+    topCommerceView: {
+        height: 50,
+        justifyContent : 'center',
+        alignItems : 'center',
+        backgroundColor: '#c1392b',
+        borderTopLeftRadius: 15,
+        borderTopRightRadius: 15,
+
+    },
+    commerceDetails: {
+        height: 110,
+        backgroundColor: '#f3f3f3',
+        paddingRight : 10
+    },
+    commercePrice: {
+        flexDirection: 'row',
         alignItems: 'center',
-        flex: .48,
+        justifyContent: 'space-around',
+        marginBottom : 10
     },
-    commerceCardColor: {
-        height: 10,
-        width: 40,
-        backgroundColor: '#8e44ad',
-        borderRadius: 10,
-        marginTop: 10
+    commerceArrowIcon: {
+        color: '#b8b8b8',
+        fontSize: 18
     },
-    commerceCardDetails: {
-        height: 90,
-        backgroundColor: '#e2e2e2',
-        width: '100%',
-        alignItems: 'center',
-        marginTop: 10
-    },
-    commerceCardPrice: {
-        marginTop: 10
-    },
-    commerceCardBadge: {
-        resizeMode: 'stretch',
-        width: 40,
+   /* commerceBottomView: {
         height: 40,
-        position: 'absolute',
-        top: -8,
-        left: -6
+        marginBottom : 15,
+        backgroundColor: '#c1392b',
+        alignItems: 'center',
+        justifyContent: 'center',
+        borderBottomLeftRadius: 15,
+        borderBottomRightRadius: 15
+    },*/
+    startCardTextView: {
+        flex: .8,
+        alignItems: 'center',
+        justifyContent: 'center'
+    },
+    rightText: {
+        textAlign: 'right'
     }
 });
 export default home;

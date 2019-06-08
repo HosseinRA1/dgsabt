@@ -13,7 +13,7 @@ const splash = EStyleSheet.create({
         marginTop : 100
     },
     pattern : {
-        width : screenWidth(),
+        width : screenWidth() + 20,
         height : screenHeight()
     },
     logo : {

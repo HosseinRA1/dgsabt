@@ -8,7 +8,7 @@ export default class App extends Component {
     };
     render() {
         return (
-            <TabNavigator>
+            <TabNavigator >
                 <TabNavigator.Item
                     title = 'خانه'
                     titleStyle={{fontFamily : 'IRANSansMobile(FaNum)'}}

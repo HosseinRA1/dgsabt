@@ -7,7 +7,9 @@ export default class Header extends Component {
     render() {
         return (
             <BaseHeader androidStatusBarColor={Platform.OS !== 'ios' ? primaryAndroid: primaryDarkIos}
-                        style={{backgroundColor: Platform.OS !== 'ios' ? primaryColor : primaryIos}}>{this.props.children}</BaseHeader>
+                        style={{backgroundColor: Platform.OS !== 'ios' ? primaryColor : primaryIos}}>
+                {this.props.children}
+            </BaseHeader>
         )
     }
 }

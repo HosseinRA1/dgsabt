@@ -8,21 +8,11 @@ import {screenWidth} from "../../../helper";
 import LinearGradient from "react-native-linear-gradient";
 import recordPackagesSelect from "../../../assets/styles/home/recordPackagesSelect";
 import Header from "../Header";
-import ImagePicker from 'react-native-image-crop-picker';
 
 
 export default class Experts extends Component {
     state = {
         itemOne: false
-    };
-    _openPicker = () => {
-        ImagePicker.openPicker({
-            width: 80,
-            height: 80,
-            cropping: true
-        }).then(image => {
-            this.setState({image: {uri: image.path, width: image.width, height: image.height, mime: image.mime}})
-        });
     };
     render() {
         return (
@@ -45,6 +35,7 @@ export default class Experts extends Component {
                     <Swiper style = {{flex : 1}}
                             loop={false}>
                         <Content>
+                            <Image source ={require('../../../assets/images/1-wizrd.png')} style = {{height : 30 , width : 400,paddingTop : 70 , alignSelf : 'center' , resizeMode : 'contain'}} />
                             <View style={experts.touchableView}>
                                 <TouchableOpacity style={experts.autoSelectExpertsButton}>
                                     <Text h4>انتخاب توسط دیجی ثبت</Text>
@@ -117,6 +108,7 @@ export default class Experts extends Component {
                             </View>
                         </Content>
                         <Content>
+                            <Image source ={require('../../../assets/images/2-wizrd.png')} style = {{height : 30 , width : 400,paddingTop : 70 , alignSelf : 'center', resizeMode : 'contain'}} />
                             <View style ={{alignItems : 'center' , justifyContent:'center' , paddingTop : 15}}>
                                 <TouchableOpacity style ={{
                                     width : 200,
@@ -281,7 +273,8 @@ export default class Experts extends Component {
                             </View>
                         </Content>
                         <Content>
-                            <View>
+                            <Image source ={require('../../../assets/images/3-wizrd.png')} style = {{height : 30 , width :'100%',paddingTop : 70 , alignSelf : 'center' , resizeMode : 'cover'}} />
+
                                 <View style={{alignItems: 'center', justifyContent: 'center'}}>
                                     <TouchableOpacity style={{
                                         marginTop: 20,
@@ -308,7 +301,8 @@ export default class Experts extends Component {
                                             backgroundColor: '#fbb100',
                                             borderTopLeftRadius: 10,
                                             borderTopRightRadius: 10,
-                                            bottom: 0
+                                            bottom: 0,
+                                            position : 'absolute'
                                         }}/>
                                     </TouchableOpacity>
                                     <Image source={require('../../../assets/images/packagesCard/ghavaed.png')}
@@ -331,10 +325,11 @@ export default class Experts extends Component {
                                         </TouchableOpacity>
                                     </View>
                                 </View>
-                            </View>
+
                         </Content>
                         <Content>
                             <View>
+                                <Image source ={require('../../../assets/images/4-wizrd.png')} style = {{height : 30, resizeMode : 'contain' , width : 400,paddingTop : 70 , alignSelf : 'center'}} />
                                 <View style ={{alignItems : 'center' , justifyContent:'center'}}>
                                     <TouchableOpacity style ={{
                                         marginTop : 20,
@@ -373,7 +368,7 @@ export default class Experts extends Component {
                                             </TouchableOpacity>
                                         </View>
                                     </View>
-                                    <To style = {{marginTop : 30 , alignItems : 'center'}}>
+                                    <View style = {{marginTop : 30 , alignItems : 'center'}}>
                                         <Text h3 color = '#eb862f'>بارگزاری فیش پرداختی</Text>
                                         <Text h5 color = 'gray'>فیش واریزی خود را بارگزاری نمایید</Text>
                                         <TouchableOpacity style = {{width : screenWidth()/1.5 , height : 120 , borderRadius : 20 , borderWidth : .8 , borderColor : 'gray' , justifyContent : 'center' , alignItems : 'center'}}>
@@ -384,7 +379,7 @@ export default class Experts extends Component {
                                                 <Text h4>بارگزاری</Text>
                                             </TouchableOpacity>
                                         </View>
-                                    </To>
+                                    </View>
                                     <View style = {{width : screenWidth()/1.2 , marginTop : 30}}>
                                         <Text h5 color = 'gray'>در صورتی که مایلید بعدا خرید نمایید، درخواست خود را به سبد خرید اضافه نمایید. شما میتوانید با مراجعه به پنل کاربری خود در آینده این درخواست را مشاهده و پرداخت نمایید</Text>
                                     </View>

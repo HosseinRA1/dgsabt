@@ -92,7 +92,7 @@ export default class RecordsPackagesSelect extends Component {
                                 <TouchableOpacity style ={recordPackagesSelect.helpButton}>
                                     <Text h4>راهنما</Text>
                                 </TouchableOpacity>
-                                <TouchableOpacity style ={recordPackagesSelect.buyButton}>
+                                <TouchableOpacity style ={recordPackagesSelect.buyButton} onPress = {() => Actions.push('experts')}>
                                     <Text h4>خرید</Text>
                                     <Icon name='md-star' style = {recordPackagesSelect.buyButtonIcon}/>
                                 </TouchableOpacity>

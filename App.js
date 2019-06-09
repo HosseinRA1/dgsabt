@@ -26,7 +26,7 @@ export default class App extends Component {
         return (
             <Router>
                 <Scene key="root" hideNavBar>
-                    <Scene key = "splash" component = {Splash} />
+                    <Scene key = "splash" component = {Splash} initial/>
                     <Scene key = 'intro' component = {Intro} />
 
                     <Scene key = "auth" hideNavBar >
@@ -34,12 +34,12 @@ export default class App extends Component {
                         <Scene key = "verify" component = {Verify} />
                     </Scene>
 
-                    <Scene key = "home" initial hideNavBar >
+                    <Scene key = "home" hideNavBar >
                         <Scene key = "home_page" component = {Home} />
                         <Scene key = "main_page" component = {Main} />
                         <Scene key = "records_packages" component = {RecordPackages} />
                         <Scene key = "records_packages_select" component = {RecordsPackagesSelect} />
-                        <Scene key = "experts" component = {Experts} initial/>
+                        <Scene key = "experts" component = {Experts} />
                         <Scene key = "company_registration" component = {CompanyRegistration} />
                         <Scene key = "roles" component = {Roles}/>
                         <Scene key = "payment" component = {Payment} />

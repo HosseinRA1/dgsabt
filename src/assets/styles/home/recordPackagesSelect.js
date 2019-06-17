@@ -2,25 +2,25 @@ import EStyleSheet from 'react-native-extended-stylesheet'
 import {screenWidth} from "../../../helper";
 
 const recordPackagesSelect = EStyleSheet.create({
-    linear :{
+    linear: {
         flexDirection: 'row',
-        width: screenWidth() ,
-        justifyContent : 'space-between'
+        width: screenWidth(),
+        justifyContent: 'space-between'
     },
     leftHeader: {
         flex: .2
     },
     centerHeader: {
         flexDirection: 'row',
-        justifyContent : 'center',
-        alignItems: 'center' ,
+        justifyContent: 'center',
+        alignItems: 'center',
         flex: .6
     },
-    headerIcon :{
+    headerIcon: {
         resizeMode: 'contain',
         height: 25,
         width: 25,
-        marginLeft:5
+        marginLeft: 5
     },
     rightHeader: {
         flex: .2,
@@ -32,9 +32,10 @@ const recordPackagesSelect = EStyleSheet.create({
         backgroundColor: 'transparent'
     },
     backIcon: {
-        color: 'white'
+        color: 'white',
+        fontSize : 26
     },
-    scrollView:{
+    scrollView: {
         flexDirection: 'row',
         paddingHorizontal: 10,
         height: 60,
@@ -42,7 +43,7 @@ const recordPackagesSelect = EStyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center'
     },
-    scrollViewButton:{
+    scrollViewButton: {
         height: 40,
         marginLeft: 10,
         width: 110,
@@ -51,12 +52,12 @@ const recordPackagesSelect = EStyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center'
     },
-    amazingButton :{
+    amazingButton: {
         height: 40,
         width: 80,
         borderRadius: 20
     },
-    amazingLinear:{
+    amazingLinear: {
         height: 40,
         flexDirection: 'row',
         alignItems: 'center',
@@ -64,7 +65,7 @@ const recordPackagesSelect = EStyleSheet.create({
         borderRadius: 20,
         marginLeft: 10
     },
-    scrollViewActiveButton:{
+    scrollViewActiveButton: {
         height: 40,
         marginLeft: 10,
         width: 110,
@@ -73,40 +74,49 @@ const recordPackagesSelect = EStyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center'
     },
-    filterView:{
+    selectionView: {
+        width : screenWidth() / 1.3,
+        flexDirection : 'row',
+        marginTop : 15,
+        justifyContent : 'space-between',
+        alignItems : 'center',
+        padding : 15
+    },
+    filterView: {
+        width: screenWidth(),
         flexDirection: 'row',
         justifyContent: 'center',
         alignItems: 'center',
         marginTop: 15
     },
-    dropDown:{
+    dropDown: {
         width: 100,
         height: 80
     },
-    dropDownStyle :{
+    dropDownStyle: {
         marginRight: 15
     },
-    dropDownText:{
+    dropDownText: {
         fontFamily: 'IRANSansMobile(FaNum)'
     },
-    filterTitle:{
+    filterTitle: {
         marginRight: 5
     },
-    filterIcon :{
+    filterIcon: {
         resizeMode: 'contain',
         height: 20,
         width: 20
     },
-    cardView:{
-        marginTop: 15 ,
-        alignItems : 'center'
+    cardView: {
+        marginTop: 15,
+        alignItems: 'center'
     },
-    cardStyle :{
+    cardStyle: {
         width: screenWidth() / 1.2,
-        height: 200,
+        height: 225,
         borderRadius: 10
     },
-    cardTopView:{
+    cardTopView: {
         backgroundColor: '#36ae76',
         height: 30,
         alignItems: 'center',
@@ -115,42 +125,43 @@ const recordPackagesSelect = EStyleSheet.create({
         borderTopLeftRadius: 10,
         width: '100%'
     },
-    cardBody:{
+    cardBody: {
         flexDirection: 'row',
         alignItems: 'center',
         justifyContent: 'space-around'
     },
-    cardDetails :{
+    cardDetails: {
         marginTop: 10
     },
-    buttonsView:{
-        flexDirection : 'row' ,
-        justifyContent : 'space-around' ,
-        marginTop :10
+    buttonsView: {
+        justifyContent: 'flex-end',
+        marginLeft: 20,
+        marginTop: 10
     },
-    helpButton :{
-        borderRadius : 10,
-        alignItems : 'center' ,
-        justifyContent : 'center' ,
+    helpButton: {
+        borderRadius: 10,
+        alignItems: 'center',
+        justifyContent: 'center',
+        backgroundColor: '#03629a',
+        width: 120,
+        height: 35,
+        flexDirection : 'row'
+    },
+    buyButton: {
+        flexDirection: 'row',
+        borderRadius: 10,
+        alignItems: 'center',
+        justifyContent: 'center',
         backgroundColor: '#36ae76',
-        width : 100 ,
-        height : 35
+        width: 150,
+        height: 35
     },
-    buyButton :{
-        flexDirection : 'row',
-        borderRadius : 10,
-        alignItems : 'center' ,
-        justifyContent : 'center' ,
-        backgroundColor: '#36ae76',
-        width : 100 ,
-        height : 35
+    buyButtonIcon: {
+        color: 'white',
+        marginLeft: 5,
+        fontSize: 22
     },
-    buyButtonIcon:{
-        color : 'white',
-        marginLeft : 5 ,
-        fontSize : 22
-    },
-    cardTopViewRed:{
+    cardTopViewRed: {
         backgroundColor: '#c85a55',
         height: 30,
         alignItems: 'center',
@@ -159,22 +170,22 @@ const recordPackagesSelect = EStyleSheet.create({
         borderTopLeftRadius: 10,
         width: '100%'
     },
-    helpButtonRed :{
-        borderRadius : 10,
-        alignItems : 'center' ,
-        justifyContent : 'center' ,
+    helpButtonRed: {
+        borderRadius: 10,
+        alignItems: 'center',
+        justifyContent: 'center',
         backgroundColor: '#c85a55',
-        width : 100 ,
-        height : 35
+        width: 100,
+        height: 35
     },
-    buyButtonRed :{
-        flexDirection : 'row',
-        borderRadius : 10,
-        alignItems : 'center' ,
-        justifyContent : 'center' ,
+    buyButtonRed: {
+        flexDirection: 'row',
+        borderRadius: 10,
+        alignItems: 'center',
+        justifyContent: 'center',
         backgroundColor: '#c85a55',
-        width : 100 ,
-        height : 35
+        width: 150,
+        height: 35
     },
 });
 

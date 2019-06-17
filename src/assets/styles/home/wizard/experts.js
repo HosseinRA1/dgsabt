@@ -4,11 +4,11 @@ const experts = EStyleSheet.create({
     touchableView:{
         flexDirection : 'row',
         justifyContent : 'space-around',
-        marginTop :15
+        marginTop :10
     },
     selectExpertsButton:{
-        width : 140,
-        height : 60,
+        width : 130,
+        height : 40,
         alignItems : 'center',
         justifyContent : 'center',
         shadowColor: '#424242',
@@ -25,16 +25,16 @@ const experts = EStyleSheet.create({
     touchableBadge :{
         width : 80 ,
         height : 8,
-        backgroundColor : '#00b5e2',
+        backgroundColor : '#8f7ccd',
         borderTopLeftRadius : 5,
         borderTopRightRadius : 5,
         position :'absolute',
         bottom :0
     },
     autoSelectExpertsButton:{
-        width : 170,
-        height : 60,
-        backgroundColor : '#00b5e2',
+        width : 140,
+        height : 40,
+        backgroundColor : '#8f7ccd',
         shadowOffset: {
             width: 0,
             height: .5,
@@ -49,24 +49,24 @@ const experts = EStyleSheet.create({
     topCardView :{
 
         height : 30,
-        backgroundColor : '#00b5e2',
+        backgroundColor : '#8f7ccd',
         alignItems :'center',
         justifyContent : 'center',
         borderTopLeftRadius : 15,
         borderTopRightRadius:15
     },
     cardBody :{
-        marginTop : 15,
+        marginTop : 10,
         flexWrap : 'wrap',
         flexDirection : 'row',
-        paddingHorizontal : 15,
+
         justifyContent : 'space-evenly',
-        alignItems :'stretch'
+
     },
     avatar :{
-        height : 70,
-        width : 70 ,
-        borderRadius : 35,
+        height : 50,
+        width : 50 ,
+        borderRadius : 25,
         borderWidth : 2,
         borderColor : '#a8a8a8'
     },
@@ -75,12 +75,13 @@ const experts = EStyleSheet.create({
         justifyContent : 'center'
     },
     continue:{
-        width : 100,
-        height : 50,
+        width : 120,
+        height : 40,
         alignItems : 'center',
         justifyContent : 'center',
-        backgroundColor : '#00b5e2',
-        borderRadius : 5
+        backgroundColor : '#8f7ccd',
+        borderRadius : 10,
+        flexDirection : 'row'
     }
 });
 

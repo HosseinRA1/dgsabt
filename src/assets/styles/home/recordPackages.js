@@ -61,8 +61,8 @@ const recordPackages = EStyleSheet.create({
         marginTop : 10
     },
     icon: {
-        width: 40,
-        height: 40
+        width: 35,
+        height: 35
     }
 
 });

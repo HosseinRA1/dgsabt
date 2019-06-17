@@ -91,30 +91,40 @@ export default class RecordPackages extends Component {
                     <View style={recordPackages.container}>
 
                         <CardIcon title='ثبت برند و علائم تجاری'
-                                  onPress ={()=> Actions.push('records_packages_select')}
+                                  onPress ={()=> Actions.push('records_packages_select',{title : "ثبت برند و علائم تجاری" , icon : cardDetails.brand.icon , color : '#165d97'})}
                                   icon={cardDetails.company.icon} color={cardDetails.company.color}/>
                         <CardIcon title='ثبت  شرکت' icon={cardDetails.brand.icon}
-                                  onPress ={()=> Actions.push('records_packages_select')}
+                                  onPress ={()=> Actions.push('records_packages_select',{title : "ثبت شرکت" , icon : cardDetails.brand.icon , color : '#049A54'})}
                                   color={cardDetails.brand.color}/>
                         <CardIcon title='ثبت اختراعات' icon={cardDetails.invented.icon}
+                                  onPress ={()=> Actions.push('records_packages_select',{title : "ثبت اختراعات" , icon : cardDetails.invented.icon , color : '#3498DB'})}
                                   color={cardDetails.invented.color}/>
                         <CardIcon title='کارت بازرگانی' icon={cardDetails.commerce.icon}
+                                  onPress ={()=> Actions.push('records_packages_select',{title : "کارت بازرگانی" , icon : cardDetails.commerce.icon , color : '#097b5e'})}
                                   color={cardDetails.commerce.color}/>
                         <CardIcon title='تغییرات شرکت ها' icon={cardDetails.companyChanges.icon}
+                                  onPress ={()=> Actions.push('records_packages_select',{title : "تغییرات شرکت ها" , icon : cardDetails.companyChanges.icon , color : '#d54334'})}
                                   color={cardDetails.companyChanges.color}/>
                         <CardIcon title='ثبت طرح صنعتی' icon={cardDetails.industrial.icon}
+                                  onPress ={()=> Actions.push('records_packages_select',{title : "ثبت طرح صنعتی" , icon : cardDetails.industrial.icon , color : '#4f6982'})}
                                   color={cardDetails.industrial.color}/>
                         <CardIcon title='جواز تاسیس' icon={cardDetails.permission.icon}
+                                  onPress ={()=> Actions.push('records_packages_select',{title : "جواز تاسیس" , icon : cardDetails.permission.icon , color : '#d66f1a'})}
                                   color={cardDetails.permission.color}/>
                         <CardIcon title='طراحی وب' icon={cardDetails.webDesign.icon}
+                                  onPress ={()=> Actions.push('records_packages_select',{title : "طراحی وب" , icon : cardDetails.webDesign.icon , color : '#0ae07c'})}
                                   color={cardDetails.webDesign.color}/>
                         <CardIcon title='طراحی و تبلیغات' icon={cardDetails.advertising.icon}
+                                  onPress ={()=> Actions.push('records_packages_select',{title : "طراحی و تبلیغات" , icon : cardDetails.advertising.icon , color : '#6e52e7'})}
                                   color={cardDetails.advertising.color}/>
                         <CardIcon title='رتبه بندی شرکت ها' icon={cardDetails.ranking.icon}
+                                  onPress ={()=> Actions.push('records_packages_select',{title : "رتبه بندی شرکت ها" , icon : cardDetails.ranking.icon , color : '#ef893b'})}
                                   color={cardDetails.ranking.color}/>
                         <CardIcon title='امور حقوقی' icon={cardDetails.legal.icon}
+                                  onPress ={()=> Actions.push('records_packages_select',{title : "ثبت طرح صنعتی" , icon : cardDetails.legal.icon , color : '#e4b32b'})}
                                   color={cardDetails.legal.color}/>
                         <CardIcon title='امور مالی و مالیاتی' icon={cardDetails.fiscal.icon}
+                                  onPress ={()=> Actions.push('records_packages_select',{title : "ثبت طرح صنعتی" , icon : cardDetails.fiscal.icon , color : '#C13970'})}
                                   color={cardDetails.fiscal.color}/>
                     </View>
                 </Content>

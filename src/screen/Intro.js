@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Image} from 'react-native';
+import {Image, TouchableOpacity} from 'react-native';
 import AppIntroSlider from 'react-native-app-intro-slider';
 import {Icon, View} from "native-base";
 import intro from "../assets/styles/intro";
@@ -19,10 +19,10 @@ const slides = [
     {
         key: 'somethun-dos',
         image1: require('../assets/images/intro-head1.png'),
-        text :
+        text:
             'با ثبت نام در سامانه دیجی ثبت ، می توانید فقط با چند کلیک امور ثبتی خود را شروع کنید \n' +
-            '\n'+
-            '\n'+
+            '\n' +
+            '\n' +
             '- ثبت انواع شرکت ها\n' +
             '-ثبت موسسات\n' +
             '-ثبت برند و علائم تجاری \n' +
@@ -52,6 +52,10 @@ const slides = [
         title: 'و در پایان :',
         text: 'ما را به دوستان خود معرفی کرده و از ما خدمات رایگان دریافت نمایید . همچنین دیجی ثبت از همکاری با کسانی که مایل به اخذ نمایندگی در شهرستان های مختلف را دارند ، استقبال می کند . منتظرتان هستیم ...',
         backgroundColor: '#22bcb5',
+        button : <TouchableOpacity style = {{width : 180 , height : 40 , alignItems : 'center', justifyContent : 'center',backgroundColor : 'white', borderRadius : 20}} onPress = {() => Actions.replace('login')}>
+            <Text color = '#296fa7'>ورود به نرم افزار</Text>
+        </TouchableOpacity>
+
     },
 ];
 
@@ -98,13 +102,14 @@ export default class Intro extends Component {
                     <Text style={intro.title}>{item.title}</Text>
                     <Text style={intro.text}>{item.text}</Text>
                     <Image style={intro.welcome} source={item.image2}/>
+                    <View style = {{alignItems: 'center'}}>
+                        {item.button}
+                    </View>
                 </View>
             </View>
         );
     };
-    _onDone = () => {
-        Actions.replace('login');
-    };
+
 
     render() {
         return (

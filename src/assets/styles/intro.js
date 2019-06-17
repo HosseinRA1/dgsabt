@@ -37,6 +37,15 @@ const intro = EStyleSheet.create({
         backgroundColor: 'white',
         zIndex: 1
     },
+    doneButton :{
+        width: 120,
+        height: 40,
+
+        backgroundColor: 'white',
+        borderRadius: 20,
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
     buttonCircle: {
         width: 40,
         height: 40,

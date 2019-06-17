@@ -60,7 +60,7 @@ export default class Home extends Component {
                 </Header>
 
                 <ScrollView style={{marginTop:10,marginLeft:10,paddingBottom : 10 ,marginRight: 10 }} showsVerticalScrollIndicator = {false}>
-                    <Swiper autoplay autoplayTimeout ={3} containerStyle = {{flex : 1 , height : 200}}>
+                    <Swiper autoplay = {true} autoplayTimeout ={3} containerStyle = {{flex : 1 , height : 200}}>
                         <View>
                         <Image source = {require('../../assets/images/slider-image.png')} style = {{ resizeMode: 'contain',width :'100%' , height : 200, borderRadius : 15 }}/>
                         </View><View>
@@ -98,6 +98,7 @@ export default class Home extends Component {
                                 containerStyle = {{flex : .48}}
                                 dotStyle ={{backgroundColor : 'transparent'}}
                                 activeDotStyle = {{backgroundColor :'transparent'}}
+                                autoplay = {true} autoplayTimeout ={2.5}
                             >
                                 <TouchableOpacity style={home.commerceView}>
                                     <View style={home.topCommerceView}>
@@ -130,12 +131,12 @@ export default class Home extends Component {
                                         <Text style={home.centerText} h3 color='#840300'>نام تجاری (برند)</Text>
                                     </View>
                                     <View style={home.commerceDetails}>
-                                        <Text style={home.centerText} h5 color='#919191'>1- نام فارسی</Text>
-                                        <Text style={home.centerText} h5 color='#919191'>2- لوگو</Text>
-                                        <Text style={home.centerText} h5 color='#919191'>3- انتخاب کالا در 3 طبقه</Text>
-                                        <Text style={home.centerText} h5 color='#919191'>4- روزنامه رسمی + آگهی
+                                        <Text style={home.rightText} h5 color='#919191'>1- نام فارسی</Text>
+                                        <Text style={home.rightText} h5 color='#919191'>2- لوگو</Text>
+                                        <Text style={home.rightText} h5 color='#919191'>3- انتخاب کالا در 3 طبقه</Text>
+                                        <Text style={home.rightText} h5 color='#919191'>4- روزنامه رسمی + آگهی
                                             تقاضا</Text>
-                                        <Text style={home.centerText} h5 color='#919191'>5- واریزی اولیه + حق الزحمه
+                                        <Text style={home.rightText} h5 color='#919191'>5- واریزی اولیه + حق الزحمه
                                             وکیل</Text>
                                     </View>
                                     <View style={home.commercePrice}>

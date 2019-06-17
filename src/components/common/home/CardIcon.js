@@ -14,7 +14,7 @@ export default class CardIcon extends Component{
                            style={recordPackages.vector}/>
                     <Image source={icon}
                            style={recordPackages.icon}/>
-                    <Text h4>{title}</Text>
+                    <Text h3>{title}</Text>
                 </LinearGradient>
             </TouchableOpacity>
         )
